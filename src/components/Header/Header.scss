@@ -1,0 +1,144 @@
+@import '../../assets/scss/varaibles';
+@import '../../assets/scss/mixins';
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  @include flex-center;
+  justify-content: space-between;
+  position: relative;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .navLinks {
+    display: flex;
+
+    &.open {
+      display: block;
+    }
+
+    .headerLinks {
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-left: 20px;
+
+        .link, .fav {
+          color: white;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+
+    .bar {
+      height: 4px;
+      background-color: white;
+      margin: 2px 0;
+      transition: 0.3s;
+
+      &.open {
+        transform: rotate(45deg) translateY(8px);
+      }
+
+      // &:nth-child(2) {
+      //   &.open {
+      //     opacity: 0;
+      //   }
+      // }
+
+      &:nth-child(3) {
+        &.open {
+          transform: rotate(-45deg) translateY(-6px);
+        }
+      }
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .navLinks {
+      display: none;
+      width: 100%;
+
+      .headerLinks {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        li {
+          margin: 10px 0;
+
+          .link, .fav {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px;
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .navLinks {
+        .headerLinks {
+          li {
+            margin: 5px 0;
+
+            .link, .fav {
+              font-size: 16px;
+
+              img {
+                width: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

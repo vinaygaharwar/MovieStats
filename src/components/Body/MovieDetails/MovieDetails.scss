@@ -1,0 +1,97 @@
+.movie-details {
+    font-family: "Roboto Slab", serif;
+    color: #ffffff;
+    padding: 20px;
+    height: 400px;
+    .feedback {
+        background-color: #dff0d8;
+        color: #3c763d;
+        border: 1px solid #d6e9c6;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        z-index: 2;
+      }
+    .details-container {
+      padding: 20px;
+      background-color: #2c3e50;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      .year {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+  
+      .poster-description {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+  
+        .poster {
+          width: 100px;
+          margin-right: 10px;
+        }
+  
+        .plot {
+          font-size: 14px;
+        }
+      }
+  
+      .rating-genre {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+  
+        .rating {
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+  
+          svg {
+            margin-right: 5px;
+          }
+        }
+  
+        .genre {
+          font-size: 14px;
+        }
+      }
+  
+      .details {
+        line-height: 1.6;
+        margin-bottom: 20px;
+  
+        .detail {
+          font-size: 14px;
+  
+          strong {
+            font-weight: bold;
+            margin-right: 5px;
+          }
+        }
+      }
+  
+      .add-fav-btn {
+        cursor: pointer;
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+    }
+  }
+  
