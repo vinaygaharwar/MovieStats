@@ -38,7 +38,7 @@ function FavMovie() {
                 </button>
               </div>
             </div>
-          )):<div>Add Favourites..</div>}
+          )):<div>Add Your Favourites..</div>}
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ const MovieDetails = ({ imdbID }) => {
 
   useEffect(() => {
     getMovieData();
+    // eslint-disable-next-line
   }, [imdbID]);
 
   const addFav = (favMovie) => {
