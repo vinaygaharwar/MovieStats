@@ -28,7 +28,7 @@ function FavMovie() {
           movieItems.map((movie) => (
             <div className="movie-card" key={movie.imdbID}>
               <div className="movie-img">
-                <img src={movie.Poster} alt={movie.Title} />
+                <img src={movie.Poster} alt={movie.Title} loading='lazy' />
               </div>
               <div className="movie-details">
                 <h3>{movie.Title}</h3>

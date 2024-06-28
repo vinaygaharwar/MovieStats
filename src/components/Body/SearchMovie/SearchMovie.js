@@ -76,7 +76,7 @@ function SearchMovie() {
 
       {loading && <div className='loading'>Loading...</div>}
 
-      {error && <div className='empty'><h2>{error}</h2></div>}
+      {error && <div className='empty' role='alert'><h2>{error}</h2></div>}
 
       {movies?.length > 0 ? (
         <div className='container'>

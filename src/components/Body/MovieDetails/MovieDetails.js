@@ -42,7 +42,7 @@ const MovieDetails = ({ imdbID }) => {
           <h2 className="title">{movieData.Title}</h2>
           <p className="year">{movieData.Year}</p>
           <div className="poster-description">
-            <img className="poster" src={movieData.Poster} alt={`${movieData.Title} Poster`} />
+            <img className="poster" src={movieData.Poster} loading="lazy" alt={`${movieData.Title} Poster`} />
             <p className="plot">{truncatePlot(movieData.Plot, 100)}</p>
           </div>
           <div className="rating-genre">

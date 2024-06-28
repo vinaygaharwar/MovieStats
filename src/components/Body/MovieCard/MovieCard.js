@@ -5,7 +5,7 @@ const MovieCard = ({ movie }) => {
     const [movieId, setMovieId] = useState();
 
     return (
-        <div className="card" onMouseEnter={() => setMovieId(movie.imdbID)} onMouseLeave={() => setMovieId("loading")}>
+        <div className="card" tabIndex={0} onMouseEnter={() => setMovieId(movie.imdbID)} onMouseLeave={() => setMovieId("loading")}>
             <div className="flip-card-inner">
                 <div className="flip-card-front">
                     <div>
@@ -14,7 +14,7 @@ const MovieCard = ({ movie }) => {
                     <div>
                         <img
                             src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/400"}
-                            alt={movie.Title}
+                            alt={movie.Title} loading="lazy"
                         />
                     </div>
                     <div>

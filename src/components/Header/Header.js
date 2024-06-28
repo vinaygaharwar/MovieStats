@@ -10,7 +10,7 @@ function Header() {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <div>
         <h1>MovieStats</h1>
       </div>
@@ -38,7 +38,7 @@ function Header() {
           </li>
         </ul>
       </div>
-      <div className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+      <div className="hamburger" role="button" onClick={toggleMenu} aria-label="Toggle menu">
         {isOpen ? (
           <span className="cross-icon"></span>
         ) : (
@@ -47,7 +47,7 @@ function Header() {
         <div className={`bar ${isOpen ? "open" : ""}`}></div>
         <div className={`bar ${isOpen ? "open" : ""}`}></div>
       </div>
-    </div>
+    </header>
   );
 }
 

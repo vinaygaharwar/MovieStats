@@ -1,7 +1,16 @@
+@import './varaibles';
 // Mixins
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+@mixin feedback{
+    background-color: $feedback-light-green;
+    color: $feedback-green;
+    border: 1px solid $feedback-border;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}

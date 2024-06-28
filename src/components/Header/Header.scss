@@ -1,9 +1,6 @@
-@import '../../assets/scss/varaibles';
-@import '../../assets/scss/mixins';
-
 .header {
   background-color: $primary-color;
-  color: white;
+  color: $text-color;
   padding: 10px 20px;
   @include flex-center;
   justify-content: space-between;
@@ -32,8 +29,9 @@
       li {
         margin-left: 20px;
 
-        .link, .fav {
-          color: white;
+        .link,
+        .fav {
+          color: $text-color;
           text-decoration: none;
           display: flex;
           align-items: center;
@@ -60,20 +58,13 @@
 
     .bar {
       height: 4px;
-      background-color: white;
+      background-color: $text-color;
       margin: 2px 0;
       transition: 0.3s;
 
       &.open {
         transform: rotate(45deg) translateY(8px);
       }
-
-      // &:nth-child(2) {
-      //   &.open {
-      //     opacity: 0;
-      //   }
-      // }
-
       &:nth-child(3) {
         &.open {
           transform: rotate(-45deg) translateY(-6px);
@@ -83,7 +74,6 @@
   }
 }
 
-// Responsive styles
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -104,7 +94,8 @@
         li {
           margin: 10px 0;
 
-          .link, .fav {
+          .link,
+          .fav {
             font-size: 18px;
           }
         }
@@ -129,7 +120,8 @@
           li {
             margin: 5px 0;
 
-            .link, .fav {
+            .link,
+            .fav {
               font-size: 16px;
 
               img {

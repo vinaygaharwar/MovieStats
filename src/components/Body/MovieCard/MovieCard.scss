@@ -7,8 +7,8 @@
   border-radius: 12px;
   overflow: hidden;
   border: none;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  transition: all .4s cubic-bezier(.175, .885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, .1);
 
   .flip-card-inner {
     position: relative;
@@ -17,7 +17,7 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
   }
 
   &:hover .flip-card-inner {
@@ -33,28 +33,28 @@
   }
 
   .flip-card-front {
-    color: white;
+    color: $text-color;
   }
 
   .flip-card-back {
     display: flex;
     justify-content: flex-start;
     padding: 10px;
-    color: black;
+    color: $color-black;
     transform: rotateY(180deg);
   }
 }
 
 .movie-details {
   font-family: "Roboto Slab", serif;
-  color: #ffffff;
+  color: $text-color;
   padding: 20px;
   height: 400px;
 
   .feedback {
-    background-color: #dff0d8;
-    color: #3c763d;
-    border: 1px solid #d6e9c6;
+    background-color: $feedback-light-green;
+    color: $feedback-green;
+    border: 1px solid $feedback-border;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -62,9 +62,9 @@
 
   .details-container {
     padding: 20px;
-    background-color: #2c3e50;
+    background-color: $secondary-color;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 
     .title {
       font-size: 18px;
@@ -128,8 +128,8 @@
 
     .add-fav-btn {
       cursor: pointer;
-      background-color: #3498db;
-      color: #ffffff;
+      background-color: $primary-color;
+      color: $text-color;
       border: none;
       padding: 10px 20px;
       font-size: 16px;
@@ -137,7 +137,7 @@
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #2980b9;
+        background-color: $hover-color;
       }
     }
   }
